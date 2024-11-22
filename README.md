@@ -1,2 +1,2 @@
-# invoice_info_extractor_using_gemini
+# Invoice Info Extractor Using Gemini
  
