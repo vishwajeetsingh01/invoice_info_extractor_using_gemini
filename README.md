@@ -217,4 +217,22 @@ The evaluation results when using only image as context are as follows:
 ### Petric Definitions
 
 #### Faithfulness
+**Definition**: Measures how accurately the generated answer reflects the content of the provided context. A higher value indicates that the answer is more directly supported by the context.
+
+#### Answer Relevancy 
+**Definition**: 
+
+#### Context Precision
+**Definition**: 
+
+#### Context Recall
+**Definition**: 
+
+#### Context Entity Recall
+**Definition**: 
+
+#### Answer Similarity
+**Definition**: 
+
+#### Answer Correctness
 **Definition**: 
