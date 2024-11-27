@@ -21,7 +21,7 @@ multi-modal question-answering using large langauage modals (LLMs).
 
 ## Architecture
 
-The architecture of the projet consists os three main engines:
+The architecture of the project consists os three main engines:
 
 ### Persistence Engine
 
@@ -49,6 +49,63 @@ The architecture of the projet consists os three main engines:
 
 ## Project Structure
 ```
-⊢ app.py
-⊢ data
-| ⊢ images
+app.py
+data
+    images
+    index
+    pdf
+    readme_images
+    table_images
+src
+    config
+        config.py
+    llama_handler
+        llama_handler.py
+    pdf_handler
+        pdf_handler.pdf
+    prompts
+        prompts.py
+    utils
+        table_transformer.py
+        utils.py
+    static
+        styles.css
+    templates
+        index.html
+    evaluations
+        test_cases.csv
+        evaluation_results.csv
+        evaluation_results_only_image.csv
+        evaluation_results_only_text.csv
+        generate_results.py
+        rages_evaluate.py
+        results.csv
+        results_only_image.csv
+        results_only_text.csv
+    requirements.tt
+    README.md
+```
+
+## Modules
+
+### PdfHandler
+
+The `PdfHandler` class is responsible for processing PDF files. It performs the following tasks:
+- Lists all PDF files in the specified directory.
+- Converts each page of the PDFs into images.
+- Extracts tables from these images using the table transformer model.
+- Deletes existing processed folders before starting new processing.
+
+### LlamaHandler
+
+The `LlamaHandler` class handles the embeddings and retrieval of data, as well as generating answers using LLMs. It performs the following tasks:
+- Embeds text and images using pre-trained models.
+- Stores embeddings in vector databases.
+- Retrieves relevant data based on a query.
+- Generates context for the answer engine.
+- Uses LLaVA Multi-Modal LLM to provide answers.
+
+## Installation
+
+### Dependencies
+
