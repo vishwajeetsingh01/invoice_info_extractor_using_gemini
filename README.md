@@ -49,41 +49,41 @@ The architecture of the project consists os three main engines:
 
 ## Project Structure
 ```
-app.py
-data
-    images
-    index
-    pdf
-    readme_images
-    table_images
-src
-    config
-        config.py
-    llama_handler
-        llama_handler.py
-    pdf_handler
-        pdf_handler.pdf
-    prompts
-        prompts.py
-    utils
-        table_transformer.py
-        utils.py
-    static
-        styles.css
-    templates
-        index.html
-    evaluations
-        test_cases.csv
-        evaluation_results.csv
-        evaluation_results_only_image.csv
-        evaluation_results_only_text.csv
-        generate_results.py
-        rages_evaluate.py
-        results.csv
-        results_only_image.csv
-        results_only_text.csv
-    requirements.tt
-    README.md
+├── app.py
+├── data
+│   ├── images
+│   ├── index
+│   ├── pdf
+│   ├── readme_images
+│   ├── table_images
+├── src
+│   ├── config
+│   │   ├── config.py
+│   ├── llama_handler
+│   │   ├── llama_handler.py
+│   ├── pdf_handler
+│   │   ├── pdf_handler.pdf
+│   ├── prompts
+│   │   ├── prompts.py
+│   ├── utils
+│   │   ├── table_transformer.py
+│   │   ├── utils.py
+├── static
+│   ├── styles.css
+├── templates
+│   ├── index.html
+├── evaluations
+│   ├── test_cases.csv
+│   ├── evaluation_results.csv
+│   ├── evaluation_results_only_image.csv
+│   ├── evaluation_results_only_text.csv
+│   ├── generate_results.py
+│   ├── rages_evaluate.py
+│   ├── results.csv
+│   ├── results_only_image.csv
+│   ├── results_only_text.csv
+├── requirements.tt
+└──   README.md
 ```
 
 ## Modules
