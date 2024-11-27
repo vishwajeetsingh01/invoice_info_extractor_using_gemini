@@ -174,8 +174,47 @@ responses. RAGAS focuses on scoring thses generated answers to ensure they meet 
 
 ### Evaluation Results with Both Text and Image as Context
 
-The evaluation results when using both text and image as context asre as follows:
+The evaluation results when using both text and image as context are as follows:
 
 | Metric                | Value    |
 |-----------------------|----------|
 | Faithfulness          | 0.333333 |
+| Answer Relevancy      | 0.235039 |
+| Context Precision     | 0.166667 |
+| Context Recall        | NaN      |
+| Context Entity Recall | 0.162698 |
+| Answer Similarity     | 0.551426 |
+| Answer Correctness    | 0.137856 |
+
+### Evaluation Results with Only Text as Context
+
+The evaluation results when using only Text as context are as follows:
+
+| Metric                | Value    |
+|-----------------------|----------|
+| Faithfulness          | 0.511111 |
+| Answer Relevancy      | 0.505301 |
+| Context Precision     | 0.000000 |
+| Context Recall        | NaN      |
+| Context Entity Recall | 0.118581 |
+| Answer Similarity     | 0.639318 |
+| Answer Correctness    | 0.159829 |
+
+### Evaluation Results with Only Image as Context
+
+The evaluation results when using only image as context are as follows:
+
+| Metric                | Value    |
+|-----------------------|----------|
+| Faithfulness          | 0.375000 |
+| Answer Relevancy      | 0.159792 |
+| Context Precision     | 0.000000 |
+| Context Recall        | NaN      |
+| Context Entity Recall | 0.152778 |
+| Answer Similarity     | 0.499295 |
+| Answer Correctness    | 0.124824 |
+
+### Petric Definitions
+
+#### Faithfulness
+**Definition**: 
