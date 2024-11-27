@@ -82,7 +82,7 @@ The architecture of the project consists os three main engines:
 │   ├── results.csv
 │   ├── results_only_image.csv
 │   ├── results_only_text.csv
-├── requirements.tt
+├── requirements.txt
 └── README.md
 ```
 
@@ -153,7 +153,7 @@ curl -X POST http://localhost:5000/persist
 To ask question and receive an answer, send a POST request to the /answer endpoint with the question in the request body
 
 ```bash
-curl -X POST -H "Content-Type: application/json" -d `{"question": "GIVE ME SUMMARY"}` http://localhost:5000/answer
+curl -X POST -H "Content-Type: application/json" -d '{"question": "GIVE ME SUMMARY"}' http://localhost:5000/answer
 ```
 
 ### UI
