@@ -16,7 +16,7 @@
 
 ## Introduction
 
-This project is designed to extract and process data from PDF files, including both tet and tables. The processed data is stored in vector databases, allowing for efficient retrival and
+This project is designed to extract and process data from PDF files, including both text and tables. The processed data is stored in vector databases, allowing for efficient retrival and
 multi-model question-answering using large langauage models (LLMs).
 
 ## Architecture
@@ -83,7 +83,7 @@ The architecture of the project consists os three main engines:
 │   ├── results_only_image.csv
 │   ├── results_only_text.csv
 ├── requirements.tt
-└──   README.md
+└── README.md
 ```
 
 ## Modules
