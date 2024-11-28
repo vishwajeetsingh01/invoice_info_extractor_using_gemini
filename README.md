@@ -21,15 +21,15 @@ multi-model question-answering using large langauage models (LLMs).
 
 ## Architecture
 
-The architecture of the project consists os three main engines:
+The architecture of the project consists of three main engines:
 
 ### Persistence Engine
 
-1. **PDF Files**: The processstarts with the input PDF files.
+1. **PDF Files**: The process starts with the input PDF files.
 2. **PDF to Images**: Each page of the PDF is converted into an image.
 3. **Table Transformer**: Tables are detected using the all-npnet model, creating a representtion of the textual data.
 4. **all-mpnet Model**: Images are embedded using the CLIP model, creating a representation of the visual data.
-6. **Text Store & Image Store**: The embeddings are stored in respective vector databases for tet and images.
+6. **Text Store & Image Store**: The embeddings are stored in respective vector databases for text and images.
 
 ### Retrival Engine
 
@@ -220,19 +220,27 @@ The evaluation results when using only image as context are as follows:
 **Definition**: Measures how accurately the generated answer reflects the content of the provided context. A higher value indicates that the answer is more directly supported by the context.
 
 #### Answer Relevancy 
-**Definition**: 
+**Definition**: Assesses how relevant the generated answer is to the question asked. It considers whether the answer addresses the key aspects of the question.
 
 #### Context Precision
-**Definition**: 
+**Definition**: Measures the proportion of the context used that is actually relevant to the answer. 
 
 #### Context Recall
-**Definition**: 
+**Definition**: Measures how much of the relevant context is retrived. A higher value means more of the relevant information was included in the context.
 
 #### Context Entity Recall
-**Definition**: 
+**Definition**: Evaluations how well the retrieved context covers the entities mentioned in the question and answer. It assesses the completeness of the context in terms of relevant entities.
 
 #### Answer Similarity
-**Definition**: 
+**Definition**: Measures how similar the generated answer is to a reference or correct answer. It considers the overlap and similarity in working and meaning.
 
 #### Answer Correctness
-**Definition**: 
+**Definition**: Evaluates the overall correctness of the generated answer in relation to the question and the context provided. It assesses the factual accuracy and comleteness of the answer.
+
+#### Final Interpretation
+
+- Using both text and image as context provides a balance but shows room for improvement in faithfulness, answer relevancy, and context precision.
+- Using only text as context yeilds the highest faithfullness and answer relevancy, indicating that CLIP model is not working as effectively on current tables.
+- Using only image as context results in lower performance across most metrices.
+- Overall, combining text and image can potentially leveragethe strengths of both modalities, but there is a need to enhance the integration and processing of multi-model data to achieve
+better evaluation metrices.
